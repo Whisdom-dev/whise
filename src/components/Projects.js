@@ -6,17 +6,17 @@ function Projects() {
     const projects = [
       {
         title: "E-commerce Website",
-        description: "A full-featured online store built with React and Node.js",
+        description: "A full-featured online store built with React and Node.js https://e-groceries.vercel.app/",
         image: image1,  // ✅ Use imported image variable
       },
       {
         title: "Uber-Clone App",
-        description: "A ride-hailing app inspired by Uber, built with React Native",
+        description: "A ride-hailing app inspired by Uber, built with React Native https://uber-clone-seven-liard.vercel.app/",
         image: image2,  // ✅ Use imported image variable
       },
       {
-        title: "Task Manager",
-        description: "A React-based to-do list application with local storage",
+        title: "Profile Card",
+        description: "A React-based to-do list application with local storage https://profilecard-eight-phi.vercel.app//",
         image: image3,  // ✅ Use imported image variable
       },
     ];
