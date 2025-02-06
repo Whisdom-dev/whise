@@ -7,7 +7,7 @@ function Hero() {
           <p className="text-xl mb-12">I create beautiful, responsive websites with clean and efficient code.</p>
           <a
             href="#contact"
-            className="bg-white text-blue-600 py-2 px-4 rounded-lg hover:bg-gray-100 transition duration-300"
+            className="bg-white text-blue-600 py-2 px-4 rounded-lg hover:bg-gray-100 shadow-md overflow-hidden transition-transform duration-300 hover:scale-105"
           >
             Get In Touch
           </a>

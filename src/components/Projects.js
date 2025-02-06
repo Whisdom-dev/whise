@@ -18,7 +18,7 @@ function Projects() {
     },
     {
       title: "Profile Card",
-      description: "A React-based to-do list application with local storage",
+      description: "A React-based Profile Card that talks about me",
       image: image3,
       url: "https://profilecard-eight-phi.vercel.app/",
     },
