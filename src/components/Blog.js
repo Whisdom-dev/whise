@@ -6,12 +6,7 @@ function GithubProjects() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const token = process.env.REACT_APP_GITHUB_TOKEN;
-    console.log("GitHub Token:", token); // Debugging token usage
-
-    const headers = token ? { Authorization: `Bearer ${token}` } : {};
-
-    fetch("https://api.github.com/users/Whisdom-dev/repos", { headers })
+    fetch("https://api.github.com/users/Whisdom-dev/repos")
       .then((res) => res.json())
       .then((data) => {
         console.log("GitHub API Response:", data);
@@ -20,14 +15,13 @@ function GithubProjects() {
           throw new Error("Unexpected API response format");
         }
 
-        // Normalize repo names (trim and lowercase)
+        // Filter specific repositories
         const filteredRepos = data.filter((repo) => {
           const repoName = repo.name.trim().toLowerCase();
           return ["e-grocery", "uber-clone", "ai-text-processor"].includes(repoName);
         });
 
-        console.log("Filtered Repos:", filteredRepos); // Check filtering
-
+        console.log("Filtered Repos:", filteredRepos);
         setRepos(filteredRepos);
         setLoading(false);
       })
