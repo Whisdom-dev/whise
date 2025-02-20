@@ -8,7 +8,7 @@ function GithubProjects() {
   useEffect(() => {
     fetch("https://api.github.com/users/Whisdom-dev/repos", {
       headers: {
-        Authorization: `token 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`
+        Authorization: `token YOUR_GITHUB_PERSONAL_ACCESS_TOKEN`
       }
     })
       .then((res) => res.json())
